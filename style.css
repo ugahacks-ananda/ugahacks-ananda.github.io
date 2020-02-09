@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+}
+body {
+    background: linear-gradient(darkblue, blue);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ /* Style the navbar */
+ #navbar {
+    overflow: hidden;
+    background-color:transparent;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  } 
+
+  #TwitterHandle{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: transparent;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  #ourButton{
+    background:   transparent;
+    border-radius: 5px;
+    padding:       8px 20px;
+    color:         #ffffff;
+    display:       inline-block;
+    align-items: center;
+    font:          normal bold 36px/1 "Ubuntu", sans-serif;
+  }

@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .margin{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body style = "font-family:-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+    <div id="navbar">
+        <a href="about.html">About</a>
+    </div> 
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        } 
+    </script>
+    <h1 style="font-size:72px;font-style:bold;text-align:center;color: white;">TweetGen</h1>
+    <h1 style="font-size:36px;text-align:center;color: white;">Enter Twitter Handle: 
+        <input type = "text" style="font-size:36px;color: white;"
+            id = "TwitterHandle"
+            value = "@" />
+    </h1>
+    <br>
+    <h1 style="font-size:36px;text-align:center;color: white;">First couple words: 
+        <input type = "text" style="font-size:36px;color: white;"
+            id = "TwitterHandle"
+            value = "" />
+    </h1>
+    <br><br>
+    <div style="text-align: center; border: 0px solid">
+        <input type="button" id="ourButton" value="Generate Text">
+    </div>
+    <br><br>
+    <p style="text-align: center;border-radius: 10px;"><img src="blankTwitterPic.jpg" alt="tests"></p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
